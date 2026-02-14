@@ -1,0 +1,41 @@
+.shop-section {
+  padding: 80px 10%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.shop-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #4b2e2e;
+}
+
+.shop-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.shop-card {
+  background: #fff7f0;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+}
+
+.shop-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #c96b00;
+}
+
+.shop-card p {
+  font-size: 15px;
+  color: #555;
+}

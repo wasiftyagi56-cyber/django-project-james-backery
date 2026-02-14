@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>James Bakery</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+   <header>
+    <div class="logo">🍰 James Bakery</div>
+
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="{% url 'shop' %}">Shop</a>
+        <a href="{% url 'product' %}">Products</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+
+        <!-- Wishlist -->
+        <a href="#" class="icon-btn">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <!-- Cart -->
+        <a href="#" class="icon-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <!-- Login -->
+        <a href="{% url 'signup' %}" class="login-btn">Sign In</a>
+    </nav>
+</header>
+
+</header>
+
+<!-- ===== Hero Section ===== -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Fresh & Delicious Bakery Items</h1>
+        <p>We bake happiness every day with love ❤️</p>
+        <button>Order Now</button>
+    </div>
+</section>
+
+<!-- ===== Products ===== -->
+<section class="products">
+    <h2>Our Special Items</h2>
+    <div class="product-box">
+        <div class="card">
+            <h3>Cakes</h3>
+            <p>Fresh cream & chocolate cakes</p>
+        </div>
+        <div class="card">
+            <h3>Pastries</h3>
+            <p>Soft & creamy pastries</p>
+        </div>
+        <div class="card">
+            <h3>Breads</h3>
+            <p>Healthy & tasty breads</p>
+        </div>
+    </div>
+    
+</section>
+ 
+
+<section class="why-us">
+  <div class="container">
+    <h2>Why Choose James Bakery?</h2>
+    <p class="subtitle">
+      Freshly baked happiness made with love & premium ingredients
+    </p>
+
+    <div class="features">
+      <div class="feature-card">
+        <h3>🥐 Freshly Baked</h3>
+        <p>Daily fresh cakes & pastries prepared with hygiene and care.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🍫 Premium Ingredients</h3>
+        <p>Only high-quality ingredients for rich taste & perfect texture.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick & safe delivery so your treats reach you on time.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>⭐ Loved by Customers</h3>
+        <p>Trusted by hundreds of happy customers every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="about">
+    <h2>About James Bakery</h2>
+    <p>
+        James Bakery is known for its fresh, hygienic and delicious bakery
+        products made with premium ingredients.
+    </p>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/919999999999" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <p>© 2026 James Bakery | All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>

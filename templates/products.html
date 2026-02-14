@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Products | James Bakery</title>
+    <link rel="stylesheet" href="{% static 'product.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🍰 James Bakery</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="product-page">
+        <h1>Our Bakery Products</h1>
+
+        <div class="product-grid">
+            {% for product in products %}
+            <div class="product-card">
+                  {% if product.images %}
+                <img src="{{product.images.url}}">
+                {% else %}
+                <p>No image</p>
+                {% endif %}
+                <h3>{{product.name}}</h3>
+                <p>Price:₹{{product.price}}</p>
+                <p>{{product.name.category}}</p>
+                <h4>Discount:{{product.discount}}</h4>
+                <button>Order Now</button>
+            </div>
+
+            {% endfor %}
+
+            
+             <div class="product-card">
+                {% if product.images %}
+                <img src="{{product.images.url}}">
+                {% else %}
+                <p>No image</p>
+                {% endif %}
+                <h3>{{product.name}}</h3>
+                <p>Price:₹{{product.price}}</p>
+                 <h4>Discount:{{product.discount}}</h4>
+                <button>Order Now</button>
+            </div>
+
+          
+            <div class="product-card">
+                <img src="images/cake6.jpg">
+                <h3>Fruit Pastry</h3>
+                <p>₹179</p>
+                <button>Order Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/cake7.jpg">
+                <h3>Cup Cake</h3>
+                <p>₹99</p>
+                <button>Order Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/cake8.jpg">
+                <h3>Brownie</h3>
+                <p>₹129</p>
+                <button>Order Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 James Bakery | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

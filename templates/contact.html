@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Contact</title>
+     <link rel="stylesheet" href="{% static 'contact.css' %}">
+</head>
+<body>
+    
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <p><strong>📍 Address:</strong> Zakir Nagar, New Delhi</p>
+      <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+      <p><strong>✉ Email:</strong> jamesbakery@gmail.com</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
